@@ -1,0 +1,131 @@
+@import "style"; 
+
+body { background-image: url(../images/pattern-grey.png); }
+html,body {  height: 100%;}
+* {margin: 0;border-bottom: 1px solid red;}
+
+// color 
+
+$color_grey:#7f7f7f;
+$color_black:#000;
+
+// font 
+
+@font-face {font-family: 'Regular';	src: url('../font/aller_lt-webfont.ttf');}
+@font-face {font-family: 'Regularita';src: url('../font/aller_ltit-webfont.ttf');}
+
+$regular: 'Regular', sans-serif;
+$regularita : 'Regularita', sans-serif;
+
+$base-font-size:14px;
+@function em ($target, $context: $base-font-size)
+{
+	@if $target == 0 { @return 0}
+	@return $target / $context + 0em;
+}
+
+@mixin bg-blue
+{
+	background-image:url(../images/pattern-blue.png); 
+	background-repeat:repeat;
+}
+// header 
+
+header {
+	
+	@include bg-blue;
+	height:60px;
+	line-height:60px;
+	
+	img,ul {
+	vertical-align:middle;
+	display:inline-block;
+	line-height: 0.6;
+	}
+
+	.row-one {margin-top: 0px; }
+
+	ul {float:right;
+			
+	& li {
+	display: inline;
+	margin:0 10px 0 10px;
+	font-family: $regular;
+	text-transform: uppercase;
+    font-size: em(12px);
+	}
+	a {
+	color:$color_grey;
+	text-decoration: none;
+	opacity:0.7;
+	&:hover {opacity:1;} 
+	}
+	}
+	}
+
+//
+footer 
+{
+	@include bg-blue;
+	text-align: center;
+
+	height: 110px;
+    width: 100%;
+    bottom: 0;
+ul 
+ {
+  & li
+  {
+   font-family: $regular;
+   color:$color_grey;
+    font-size: em(12px);
+   list-style: none;	
+   padding:6px;
+text-align: center;
+
+  }
+  a 
+  {
+   color:$color_grey;
+   text-decoration: none;
+   &:hover {opacity:1;} 
+  }
+ }
+ul:nth-child(2) li {display: inline;padding:10px}
+section {
+		vertical-align:middle;
+	display:inline-block;
+	line-height: 1.1;
+}
+}
+// projets gallerie 
+
+.projets-global 
+{
+		min-height: 100%;
+    	margin-bottom: -110px;
+    	padding: 70px 0 70px 0;
+
+}
+.projets 
+{
+	text-align: center;
+	img {max-width: 470px;margin:0 20px 20px 0}
+	
+	.row-one {margin: 0px}
+
+}
+.projets-global:after 
+{
+	 content: "";
+  display: block;
+}
+footer, .projets-global:after 
+{
+	height:110px;
+}
+// media type 
+
+@media all and (min-width:960px) {section{width:$desktop-container;margin: auto;}}
+@media all and (max-width:800px) {.projets img{max-width:420px;padding:10px;}section {margin: auto;text-align: center}}
+		
