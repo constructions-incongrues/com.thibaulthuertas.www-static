@@ -6,34 +6,34 @@
   font-family: 'Regularita';
   src: url("../font/aller_ltit-webfont.ttf"); }
 
-/* line 7, ../sass/footer.scss */
+/* line 6, ../sass/footer.scss */
 footer {
   background-image: url(../images/pattern-blue.png);
   background-repeat: repeat;
+  font-family: "Regular", sans-serif;
   text-align: center;
   height: 110px;
   width: 100%;
   bottom: 0; }
-  /* line 16, ../sass/footer.scss */
-  footer ul li {
-    font-family: "Regular", sans-serif;
-    color: #7f7f7f;
-    font-size: 0.75em;
-    list-style: none;
-    padding: 6px;
-    text-align: center; }
-  /* line 25, ../sass/footer.scss */
-  footer ul a {
-    color: #7f7f7f;
-    text-decoration: none; }
-    /* line 28, ../sass/footer.scss */
-    footer ul a:hover {
-      opacity: 1; }
-  /* line 31, ../sass/footer.scss */
+  /* line 15, ../sass/footer.scss */
+  footer ul {
+    position: relative;
+    top: 25px; }
+    /* line 19, ../sass/footer.scss */
+    footer ul li {
+      font-size: 0.75em;
+      list-style: none;
+      padding: 6px; }
+  /* line 30, ../sass/footer.scss */
   footer ul:nth-child(2) li {
     display: inline;
-    padding: 10px; }
-  /* line 32, ../sass/footer.scss */
+    padding: 10px;
+    opacity: 0.5; }
+    /* line 35, ../sass/footer.scss */
+    footer ul:nth-child(2) li:hover {
+      opacity: 1;
+      transition-duration: 2s; }
+  /* line 43, ../sass/footer.scss */
   footer section {
     vertical-align: middle;
     display: inline-block;

@@ -2,40 +2,36 @@
 @import "typography";
 @import "colors";
 
-header {
+header
+{
+ font-size: em(12px);
 
-	@include bg-blue;
-	height:60px;
-	line-height:60px;
-	
-	img,ul {
+ text-transform: uppercase;
+ @include bg-blue;
+ height:60px;
+ line-height:60px;
+ 
+ img,ul
+  {
 	vertical-align:middle;
 	display:inline-block;
-	}
-
-	aside {
-	min-width:10%;float:left;
-	}
+  }
 	
-	ul {
+  aside 
+  {
+	min-width:10%;
+	float:left;
+  }
+
+  ul 
+  {
 	max-width: 90%;	
 	float:right;
-
-	& li {
+  li 
+    {
 	display: inline;
-	margin:0 10px 0 10px;
-	font-family: $regular;
-	text-transform: uppercase;
-    font-size: em(12px);
-    opacity:0.5
-	}
-
-	a {
-	color:$color_grey;
-	text-decoration: none;
-	opacity:0.7;
-	&:hover {opacity:1;} 
-	}
-	
-	}
-	}
+	margin:0 5px 0 5px;
+  
+}
+}
+} 

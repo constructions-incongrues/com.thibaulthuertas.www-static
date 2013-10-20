@@ -8,15 +8,22 @@
 @import "header";
 @import "portfolio";
 @import "footer";
+@import "colors";
 
-body { @include bg-grey; }
+body {@include bg-grey;}
 
- 
-* {margin: 0;border-bottom: 1px solid red;}
+header, footer 
+{
+font-family: $regular;
+color: $color_grey; 
+a {color:$color_grey;text-decoration: none;}
+a:hover {color:$color_grey_hover;transition-duration:1s}
+}
 
 @media all and (min-width:1060px)
   {
-	header section,.portfolio, footer section {width:1060px;margin: auto;}
+	header section,.portfolio, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
+  section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
 	.portfolio img {width:510px;height:338px;}
   span:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:12px;}
   span:nth-child(even) {text-align: right;padding-right: 10px;}
@@ -33,7 +40,8 @@ body { @include bg-grey; }
 @media all and (max-width:510px) 
   {
   	header section,.portfolio, footer section {max-width:510px;margin: auto;}
-  	header ul {clear:both;float:left;@include bg-blue;width:100%;}
+    section:nth-child(2) {display: none;}
+  	header ul {clear:both;float:left;width:100%;}
     div {width: 100%;text-align: center}
 
   	.portfolio img {width:300px;height:198px;}
