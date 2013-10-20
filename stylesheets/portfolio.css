@@ -1,0 +1,14 @@
+/* line 2, ../sass/portfolio.scss */
+.portfolio {
+  padding: 70px 0 70px 0;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border: 1px solid #000; }
+  /* line 8, ../sass/portfolio.scss */
+  .portfolio div {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+    height: 100%; }

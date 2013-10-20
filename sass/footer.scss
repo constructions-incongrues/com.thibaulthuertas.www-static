@@ -1,0 +1,37 @@
+@import "mixin";
+@import "typography";
+@import "colors";
+
+
+footer 
+{
+	@include bg-blue;
+	text-align: center;
+	height: 110px;
+    width: 100%;
+    bottom: 0;
+ul 
+ {
+  & li
+  {
+   font-family: $regular;
+   color:$color_grey;
+   font-size: em(12px);
+   list-style: none;	
+   padding:6px;
+   text-align: center;
+  }
+  a 
+  {
+   color:$color_grey;
+   text-decoration: none;
+   &:hover {opacity:1;} 
+  }
+ }
+ul:nth-child(2) li {display: inline;padding:10px}
+section {
+		vertical-align:middle;
+	display:inline-block;
+	line-height: 1.1;
+}
+}

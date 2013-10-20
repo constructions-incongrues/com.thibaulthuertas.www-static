@@ -1,0 +1,46 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "typography";
+@import "header";
+@import "portfolio";
+@import "footer";
+
+body { @include bg-grey; }
+
+ 
+* {margin: 0;border-bottom: 1px solid red;}
+
+@media all and (min-width:1060px)
+  {
+	header section,.portfolio, footer section {width:1060px;margin: auto;}
+	.portfolio img {width:510px;height:338px;}
+  div {width: 50%;}
+  span:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:12px;}
+  span:nth-child(even) {text-align: right;padding-right: 10px;}
+  span {padding-top: 10px;}
+  }
+
+@media all and (max-width:1060px) 
+  {
+  	header section,.portfolio,footer section {max-width:1060px;margin: auto;}
+  	div.portfolio {clear:both;margin:0 auto;float:none;}
+    div {width: 100%;text-align: center}
+	  .portfolio img {width:510px;height:338px;margin-bottom: 18px;}
+
+  }
+
+@media all and (max-width:510px) 
+  {
+  	header section,.portfolio, footer section {max-width:510px;margin: auto;}
+  	header ul {clear:both;float:left;@include bg-blue;width:100%;}
+    div {width: 100%;text-align: center}
+
+  	.portfolio div {clear:both;float:left;}
+  	.portfolio img {width:300px;height:198px;}
+  }
+
+
