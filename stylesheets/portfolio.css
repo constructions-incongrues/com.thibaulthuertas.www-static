@@ -6,3 +6,7 @@ section:nth-child(3) {
   /* line 7, ../sass/portfolio.scss */
   section:nth-child(3) img {
     margin-bottom: 18px; }
+  /* line 9, ../sass/portfolio.scss */
+  section:nth-child(3) hr {
+    clear: both;
+    visibility: hidden; }
