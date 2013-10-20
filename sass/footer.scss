@@ -5,17 +5,16 @@
 footer 
 {
 
-	@include bg-blue;
   font-family: $regular;
   color: $color_grey; 
 	text-align: center;
 	height: 110px;
   width: 100%;
   bottom: 0;
+    @include bg-blue;
  
 ul 
   {
-    position: relative;
     top:25px;
    li
     {
@@ -48,5 +47,6 @@ section
 	 vertical-align:middle;
 	 display:inline-block;
 	 line-height: 1.1;
+
   }
 }  

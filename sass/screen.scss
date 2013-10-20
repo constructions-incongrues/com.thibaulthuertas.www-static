@@ -14,28 +14,29 @@ body {@include bg-grey;}
 
 @media all and (min-width:1060px)
   {
-	header section,.portfolio, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
+	header section,section:nth-child(3), footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
   section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
-	.portfolio img {width:510px;height:338px;}
-  span:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:12px;}
-  span:nth-child(even) {text-align: right;padding-right: 10px;}
+	section:nth-child(3) img {width:510px;height:338px;}
+  article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:12px;}
+  article:nth-child(even) {text-align: right;padding-right: 10px;}
+  article {float:left;display: block;}
   }
 
 @media all and (max-width:1060px) 
   {
-  	header section,.portfolio,footer section {max-width:1060px;margin: auto;}
-    div {width: 100%;text-align: center}
-   section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
-	  .portfolio img {width:510px;height:338px;margin-bottom: 18px;}
+  	header section,section:nth-child(3),footer section {max-width:1060px;margin: auto;}
+    article {width: 100%;text-align: center}
+    section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
+	  section:nth-child(3) img {width:510px;height:338px;margin-bottom: 18px;}
 
   }
 
 @media all and (max-width:510px) 
   {
-  	header section,.portfolio, footer section {max-width:510px;margin: auto;}
+  	header section,section:nth-child(3), footer section {max-width:510px;margin: auto;}
     section:nth-child(2) {display: none;}
   	header ul {clear:both;float:left;width:100%;}
-    div {width: 100%;text-align: center}
+    article {width: 100%;text-align: center}
 
   	.portfolio img {width:300px;height:198px;}
   }

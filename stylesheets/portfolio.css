@@ -1,8 +1,8 @@
 /* line 2, ../sass/portfolio.scss */
-.portfolio {
+section:nth-child(3) {
   padding: 70px 0 70px 0;
   margin: 0 auto;
   margin-bottom: 70px; }
-  /* line 6, ../sass/portfolio.scss */
-  .portfolio img {
+  /* line 7, ../sass/portfolio.scss */
+  section:nth-child(3) img {
     margin-bottom: 18px; }
