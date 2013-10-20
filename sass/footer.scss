@@ -2,36 +2,52 @@
 @import "typography";
 @import "colors";
 
-
 footer 
 {
 	@include bg-blue;
+  color:$color_grey;
+  font-family: $regular;
 	text-align: center;
 	height: 110px;
-    width: 100%;
-    bottom: 0;
+  width: 100%;
+  bottom: 0;
+ 
 ul 
- {
-  & li
   {
-   font-family: $regular;
-   color:$color_grey;
-   font-size: em(12px);
-   list-style: none;	
-   padding:6px;
-   text-align: center;
-  }
-  a 
+    position: relative;
+    top:25px;
+   li
+    {
+       font-size: em(12px);
+       list-style: none;	
+       padding:6px;
+    a 
+      {
+        text-decoration: none;
+        color: $color_grey;
+      }
+    }
+  }  
+
+ul:nth-child(2)
+  { 
+   li
+    {
+      display: inline;
+      padding:10px;
+      opacity: 0.5;
+   &:hover
+     { 
+      opacity:1;
+      transition-duration:2s;  
+     }
+    }
+  }    
+  
+section 
   {
-   color:$color_grey;
-   text-decoration: none;
-   &:hover {opacity:1;} 
+	 vertical-align:middle;
+	 display:inline-block;
+	 line-height: 1.1;
   }
- }
-ul:nth-child(2) li {display: inline;padding:10px}
-section {
-		vertical-align:middle;
-	display:inline-block;
-	line-height: 1.1;
-}
-}
+}  
