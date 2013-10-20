@@ -12,14 +12,6 @@
 
 body {@include bg-grey;}
 
-header, footer 
-{
-font-family: $regular;
-color: $color_grey; 
-a {color:$color_grey;text-decoration: none;}
-a:hover {color:$color_grey_hover;transition-duration:1s}
-}
-
 @media all and (min-width:1060px)
   {
 	header section,.portfolio, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
@@ -33,6 +25,7 @@ a:hover {color:$color_grey_hover;transition-duration:1s}
   {
   	header section,.portfolio,footer section {max-width:1060px;margin: auto;}
     div {width: 100%;text-align: center}
+   section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
 	  .portfolio img {width:510px;height:338px;margin-bottom: 18px;}
 
   }

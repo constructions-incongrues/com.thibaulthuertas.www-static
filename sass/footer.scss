@@ -4,8 +4,10 @@
 
 footer 
 {
+
 	@include bg-blue;
   font-family: $regular;
+  color: $color_grey; 
 	text-align: center;
 	height: 110px;
   width: 100%;
@@ -17,9 +19,11 @@ ul
     top:25px;
    li
     {
-       font-size: em(12px);
+       font-size: $small-font-size;
        list-style: none;	
        padding:6px;
+    a {color:$color_grey;text-decoration: none;}
+    a:hover {color:$color_grey_hover;transition-duration:1s} 
 
     }
   }  

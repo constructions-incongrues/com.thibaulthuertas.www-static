@@ -9,24 +9,37 @@
 /* line 6, ../sass/header.scss */
 header {
   font-size: 0.75em;
+  font-family: "Regular", sans-serif;
+  color: #7f7f7f;
   text-transform: uppercase;
   background-image: url(../images/pattern-blue.png);
   background-repeat: repeat;
   height: 60px;
   line-height: 60px; }
-  /* line 15, ../sass/header.scss */
+  /* line 16, ../sass/header.scss */
   header img, header ul {
     vertical-align: middle;
     display: inline-block; }
-  /* line 21, ../sass/header.scss */
+  /* line 22, ../sass/header.scss */
   header aside {
     min-width: 10%;
     float: left; }
-  /* line 27, ../sass/header.scss */
-  header ul {
+  /* line 28, ../sass/header.scss */
+  header nav {
     max-width: 90%;
     float: right; }
-    /* line 31, ../sass/header.scss */
-    header ul li {
+    /* line 32, ../sass/header.scss */
+    header nav li {
       display: inline;
       margin: 0 5px 0 5px; }
+      /* line 35, ../sass/header.scss */
+      header nav li.selected a {
+        color: black; }
+      /* line 36, ../sass/header.scss */
+      header nav li a {
+        color: #7f7f7f;
+        text-decoration: none; }
+      /* line 37, ../sass/header.scss */
+      header nav li a:hover {
+        color: black;
+        transition-duration: 1s; }

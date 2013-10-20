@@ -77,27 +77,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 6, ../sass/header.scss */
 header {
   font-size: 0.75em;
+  font-family: "Regular", sans-serif;
+  color: #7f7f7f;
   text-transform: uppercase;
   background-image: url(../images/pattern-blue.png);
   background-repeat: repeat;
   height: 60px;
   line-height: 60px; }
-  /* line 15, ../sass/header.scss */
+  /* line 16, ../sass/header.scss */
   header img, header ul {
     vertical-align: middle;
     display: inline-block; }
-  /* line 21, ../sass/header.scss */
+  /* line 22, ../sass/header.scss */
   header aside {
     min-width: 10%;
     float: left; }
-  /* line 27, ../sass/header.scss */
-  header ul {
+  /* line 28, ../sass/header.scss */
+  header nav {
     max-width: 90%;
     float: right; }
-    /* line 31, ../sass/header.scss */
-    header ul li {
+    /* line 32, ../sass/header.scss */
+    header nav li {
       display: inline;
       margin: 0 5px 0 5px; }
+      /* line 35, ../sass/header.scss */
+      header nav li.selected a {
+        color: black; }
+      /* line 36, ../sass/header.scss */
+      header nav li a {
+        color: #7f7f7f;
+        text-decoration: none; }
+      /* line 37, ../sass/header.scss */
+      header nav li a:hover {
+        color: black;
+        transition-duration: 1s; }
 
 /* line 2, ../sass/portfolio.scss */
 .portfolio {
@@ -121,29 +134,38 @@ footer {
   background-image: url(../images/pattern-blue.png);
   background-repeat: repeat;
   font-family: "Regular", sans-serif;
+  color: #7f7f7f;
   text-align: center;
   height: 110px;
   width: 100%;
   bottom: 0; }
-  /* line 15, ../sass/footer.scss */
+  /* line 17, ../sass/footer.scss */
   footer ul {
     position: relative;
     top: 25px; }
-    /* line 19, ../sass/footer.scss */
+    /* line 21, ../sass/footer.scss */
     footer ul li {
       font-size: 0.75em;
       list-style: none;
       padding: 6px; }
-  /* line 30, ../sass/footer.scss */
+      /* line 25, ../sass/footer.scss */
+      footer ul li a {
+        color: #7f7f7f;
+        text-decoration: none; }
+      /* line 26, ../sass/footer.scss */
+      footer ul li a:hover {
+        color: black;
+        transition-duration: 1s; }
+  /* line 34, ../sass/footer.scss */
   footer ul:nth-child(2) li {
     display: inline;
     padding: 10px;
     opacity: 0.5; }
-    /* line 35, ../sass/footer.scss */
+    /* line 39, ../sass/footer.scss */
     footer ul:nth-child(2) li:hover {
       opacity: 1;
       transition-duration: 2s; }
-  /* line 43, ../sass/footer.scss */
+  /* line 47, ../sass/footer.scss */
   footer section {
     vertical-align: middle;
     display: inline-block;
@@ -154,86 +176,81 @@ body {
   background-image: url(../images/pattern-grey.png);
   background-repeat: repeat; }
 
-/* line 16, ../sass/screen.scss */
-header, footer {
-  font-family: "Regular", sans-serif;
-  color: #7f7f7f; }
-  /* line 19, ../sass/screen.scss */
-  header a, footer a {
-    color: #7f7f7f;
-    text-decoration: none; }
-  /* line 20, ../sass/screen.scss */
-  header a:hover, footer a:hover {
-    color: black;
-    transition-duration: 1s; }
-
 @media all and (min-width: 1060px) {
-  /* line 25, ../sass/screen.scss */
+  /* line 17, ../sass/screen.scss */
   header section, .portfolio, footer section, aside:nth-child(2) {
     width: 1060px;
     margin: auto; }
 
-  /* line 26, ../sass/screen.scss */
+  /* line 18, ../sass/screen.scss */
   section:nth-child(2) {
     background-image: url(../images/pattern-blue.png);
     background-repeat: repeat; }
-    /* line 26, ../sass/screen.scss */
+    /* line 18, ../sass/screen.scss */
     section:nth-child(2) aside {
       text-align: center; }
 
-  /* line 27, ../sass/screen.scss */
+  /* line 19, ../sass/screen.scss */
   .portfolio img {
     width: 510px;
     height: 338px; }
 
-  /* line 28, ../sass/screen.scss */
+  /* line 20, ../sass/screen.scss */
   span:nth-child(odd) {
     text-align: left;
     padding-left: 10px;
     margin-right: 12px; }
 
-  /* line 29, ../sass/screen.scss */
+  /* line 21, ../sass/screen.scss */
   span:nth-child(even) {
     text-align: right;
     padding-right: 10px; } }
 @media all and (max-width: 1060px) {
-  /* line 34, ../sass/screen.scss */
+  /* line 26, ../sass/screen.scss */
   header section, .portfolio, footer section {
     max-width: 1060px;
     margin: auto; }
 
-  /* line 35, ../sass/screen.scss */
+  /* line 27, ../sass/screen.scss */
   div {
     width: 100%;
     text-align: center; }
 
-  /* line 36, ../sass/screen.scss */
+  /* line 28, ../sass/screen.scss */
+  section:nth-child(2) {
+    background-image: url(../images/pattern-blue.png);
+    background-repeat: repeat; }
+    /* line 28, ../sass/screen.scss */
+    section:nth-child(2) aside {
+      text-align: center; }
+
+  /* line 29, ../sass/screen.scss */
   .portfolio img {
     width: 510px;
     height: 338px;
     margin-bottom: 18px; } }
 @media all and (max-width: 510px) {
-  /* line 42, ../sass/screen.scss */
+  /* line 35, ../sass/screen.scss */
   header section, .portfolio, footer section {
     max-width: 510px;
     margin: auto; }
 
-  /* line 43, ../sass/screen.scss */
+  /* line 36, ../sass/screen.scss */
   section:nth-child(2) {
     display: none; }
 
-  /* line 44, ../sass/screen.scss */
+  /* line 37, ../sass/screen.scss */
   header ul {
     clear: both;
     float: left;
     width: 100%; }
 
-  /* line 45, ../sass/screen.scss */
+  /* line 38, ../sass/screen.scss */
   div {
     width: 100%;
     text-align: center; }
 
-  /* line 47, ../sass/screen.scss */
+  /* line 40, ../sass/screen.scss */
   .portfolio img {
     width: 300px;
     height: 198px; } }

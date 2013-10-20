@@ -4,8 +4,9 @@
 
 header
 {
- font-size: em(12px);
-
+ font-size: $small-font-size;
+ font-family: $regular;
+ color: $color_grey; 
  text-transform: uppercase;
  @include bg-blue;
  height:60px;
@@ -23,7 +24,7 @@ header
 	float:left;
   }
 
-  ul 
+  nav 
   {
 	max-width: 90%;	
 	float:right;
@@ -31,7 +32,9 @@ header
     {
 	display: inline;
 	margin:0 5px 0 5px;
-  
+	&.selected a{color:$color_selected}
+    a {color:$color_grey;text-decoration: none;}
+    a:hover {color:$color_grey_hover;transition-duration:1s} 
 }
 }
 } 

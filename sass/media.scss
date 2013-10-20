@@ -1,0 +1,10 @@
+$media: screen;
+$screen_width: (width 1060px) (orientation portrait)
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+
+@media #{$media} and ($feature: $value) {
+  .sidebar {
+    width: 500px;
+  }
+}
