@@ -1,12 +1,12 @@
 /* line 2, ../sass/portfolio.scss */
-section:nth-child(3) {
-  padding: 70px 0 70px 0;
-  margin: 0 auto;
-  margin-bottom: 70px; }
+#mosaic {
+  padding: 70px 0 40px 0;
+  margin: 0 auto; }
   /* line 7, ../sass/portfolio.scss */
-  section:nth-child(3) img {
-    margin-bottom: 18px; }
-  /* line 9, ../sass/portfolio.scss */
-  section:nth-child(3) hr {
+  #mosaic hr {
     clear: both;
     visibility: hidden; }
+
+/* line 9, ../sass/portfolio.scss */
+img {
+  margin-bottom: 17px; }

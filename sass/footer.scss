@@ -8,14 +8,17 @@ footer
   font-family: $regular;
   color: $color_grey; 
 	text-align: center;
-	height: 110px;
+	height: 140px;
+  line-height: 140px;
   width: 100%;
   bottom: 0;
     @include bg-blue;
- 
+
 ul 
   {
-    top:25px;
+  vertical-align:middle;
+  display:inline;
+
    li
     {
        font-size: $small-font-size;
@@ -32,8 +35,8 @@ ul:nth-child(2)
    li
     {
       display: inline;
-      padding:10px;
-      opacity: 0.5;
+      padding:15px;
+      opacity: 0.6;
    &:hover
      { 
       opacity:1;
@@ -50,3 +53,8 @@ section
 
   }
 }  
+
+address 
+{
+  margin-bottom: 20px;
+}

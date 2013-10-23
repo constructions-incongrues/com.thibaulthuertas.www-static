@@ -10,7 +10,8 @@ header
  text-transform: uppercase;
  @include bg-blue;
  height:60px;
- line-height:60px;
+ line-height:60px;	
+
  
  img,ul
   {
@@ -22,12 +23,14 @@ header
   {
 	min-width:10%;
 	float:left;
+ margin-left:10px;
   }
 
   nav 
   {
 	max-width: 90%;	
 	float:right;
+  margin-right: 10px;
   li 
     {
 	display: inline;
