@@ -6,49 +6,48 @@
   font-family: 'Regularita';
   src: url("../font/aller_ltit-webfont.ttf"); }
 
-/* line 6, ../sass/footer.scss */
+/* line 5, ../sass/footer.scss */
 footer {
-  font-family: "Regular", sans-serif;
-  color: #b2b2b2;
-  text-align: center;
+  background-image: url(../images/pattern-blue.png);
+  background-repeat: repeat;
   height: 140px;
   line-height: 140px;
   width: 100%;
   bottom: 0;
-  background-image: url(../images/pattern-blue.png);
-  background-repeat: repeat; }
-  /* line 18, ../sass/footer.scss */
-  footer ul {
-    vertical-align: middle;
-    display: inline; }
-    /* line 23, ../sass/footer.scss */
-    footer ul li {
-      font-size: 0.75em;
-      list-style: none;
-      padding: 6px; }
-      /* line 27, ../sass/footer.scss */
-      footer ul li a {
-        color: #b2b2b2;
-        text-decoration: none; }
-      /* line 28, ../sass/footer.scss */
-      footer ul li a:hover {
-        color: #7f7f7f;
-        transition-duration: 1s; }
-  /* line 36, ../sass/footer.scss */
-  footer ul:nth-child(2) li {
-    display: inline;
-    padding: 15px;
-    opacity: 0.6; }
-    /* line 41, ../sass/footer.scss */
-    footer ul:nth-child(2) li:hover {
-      opacity: 1;
-      transition-duration: 2s; }
-  /* line 49, ../sass/footer.scss */
+  font-family: "Regular", sans-serif;
+  color: #b2b2b2;
+  text-align: center; }
+  /* line 16, ../sass/footer.scss */
   footer section {
     vertical-align: middle;
     display: inline-block;
     line-height: 1.1; }
 
-/* line 58, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
+footer ul {
+  display: inline;
+  vertical-align: middle; }
+  /* line 27, ../sass/footer.scss */
+  footer ul li {
+    font-size: 0.75em;
+    list-style: none;
+    padding: 6px; }
+    /* line 32, ../sass/footer.scss */
+    footer ul li a {
+      color: #b2b2b2; }
+    /* line 33, ../sass/footer.scss */
+    footer ul li a:hover {
+      color: #7f7f7f; }
+
+/* line 39, ../sass/footer.scss */
+footer ul:nth-child(2) li {
+  display: inline;
+  padding: 15px;
+  opacity: 0.6; }
+  /* line 44, ../sass/footer.scss */
+  footer ul:nth-child(2) li:hover {
+    opacity: 1; }
+
+/* line 48, ../sass/footer.scss */
 address {
   margin-bottom: 20px; }

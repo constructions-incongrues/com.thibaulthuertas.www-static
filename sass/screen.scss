@@ -7,11 +7,14 @@
 
 body {@include bg-grey;}
 
+a { text-decoration: none }
+
 @media all and (min-width:1060px)
   {
-	header section,#mosaic,#projet, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
-  section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
-	#mosaic img {width:510px;height:338px;}
+	header section,.mosaic,.projet, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
+  .intro { @include bg-blue; aside {  text-align:center; }}
+  .intro img {max-width:100%;height:auto;}
+	.mosaic img {width:510px;height:338px;}
   article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:20px;}
   article:nth-child(even) {text-align: right;padding-right: 10px;}
   article {float:left;display: block;}
@@ -19,21 +22,23 @@ body {@include bg-grey;}
 
 @media all and (max-width:1060px) 
   {
-  	header section,section:nth-child(3),footer section {max-width:1060px;margin: auto;}
+  	header section,.mosaic,.projet,footer section {max-width:1060px;margin: auto;}
     article {width: 100%;text-align: center}
-    section:nth-child(2) { @include bg-blue; aside {  text-align: center; }}
-	  #mosaic img {width:510px;height:338px;}
+    .intro { @include bg-blue; aside {  text-align: center; }}
+  .intro img {max-width:100%;height:auto;}
+
+	  .mosaic img {width:510px;height:338px;}
 
   }
 
 @media all and (max-width:510px) 
   {
-  	header section,#mosaic, footer section {max-width:510px;margin: auto;}
-    section:nth-child(2) {display: none;}
+  	header section,.mosaic,.projet, footer section {max-width:510px;margin: auto;}
+    .intro {display: none;}
   	header ul {clear:both;float:left;width:100%;}
     article {width: 100%;text-align: center}
 
-  	#mosaic img {width:300px;height:198px;}
+  	.mosaic img {width:300px;height:198px;}
   }
 
 

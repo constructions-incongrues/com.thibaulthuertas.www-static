@@ -70,58 +70,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: 'Regularita';
   src: url("../font/aller_ltit-webfont.ttf"); }
 
-/* line 6, ../sass/header.scss */
+/* line 5, ../sass/header.scss */
 header {
-  font-size: 0.75em;
-  font-family: "Regular", sans-serif;
-  color: #b2b2b2;
-  text-transform: uppercase;
   background-image: url(../images/pattern-blue.png);
   background-repeat: repeat;
   height: 60px;
-  line-height: 60px; }
-  /* line 17, ../sass/header.scss */
+  line-height: 60px;
+  font-size: 0.75em;
+  font-family: "Regular", sans-serif;
+  color: #b2b2b2;
+  text-transform: uppercase; }
+  /* line 14, ../sass/header.scss */
   header img, header ul {
-    vertical-align: middle;
-    display: inline-block; }
-  /* line 23, ../sass/header.scss */
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 20, ../sass/header.scss */
   header aside {
-    min-width: 10%;
     float: left;
+    min-width: 10%;
     margin-left: 10px; }
-  /* line 30, ../sass/header.scss */
-  header nav {
-    max-width: 90%;
-    float: right;
-    margin-right: 10px; }
-    /* line 35, ../sass/header.scss */
-    header nav li {
-      display: inline;
-      margin: 0 5px 0 5px; }
-      /* line 38, ../sass/header.scss */
-      header nav li.selected a {
-        color: #7f7f7f; }
-      /* line 39, ../sass/header.scss */
-      header nav li a {
-        color: #b2b2b2;
-        text-decoration: none; }
-      /* line 40, ../sass/header.scss */
-      header nav li a:hover {
-        color: #7f7f7f;
-        transition-duration: 1s; }
 
-/* line 2, ../sass/portfolio.scss */
-#mosaic {
-  padding: 70px 0 40px 0;
-  margin: 0 auto; }
-  /* line 7, ../sass/portfolio.scss */
-  #mosaic hr {
-    clear: both;
-    visibility: hidden; }
+/* line 27, ../sass/header.scss */
+header nav {
+  float: right;
+  max-width: 90%;
+  margin-right: 10px; }
+  /* line 32, ../sass/header.scss */
+  header nav li {
+    display: inline;
+    margin: 0 5px 0 5px; }
+    /* line 36, ../sass/header.scss */
+    header nav li.selected a {
+      color: #7f7f7f; }
+    /* line 37, ../sass/header.scss */
+    header nav li a {
+      color: #b2b2b2; }
+    /* line 38, ../sass/header.scss */
+    header nav li a:hover {
+      color: #7f7f7f; }
 
-/* line 9, ../sass/portfolio.scss */
-img {
-  margin-bottom: 17px; }
+/* line 41, ../sass/header.scss */
+.intro {
+  max-width: 100%;
+  height: auto;
+  text-align: center; }
+
+/* line 42, ../sass/header.scss */
+.intro aside {
+  margin: auto !important;
+  text-align: center !important; }
 
 @font-face {
   font-family: 'Regular';
@@ -131,50 +128,130 @@ img {
   font-family: 'Regularita';
   src: url("../font/aller_ltit-webfont.ttf"); }
 
-/* line 6, ../sass/footer.scss */
-footer {
-  font-family: "Regular", sans-serif;
-  color: #b2b2b2;
+/* line 5, ../sass/portfolio.scss */
+.mosaic, .projet {
+  padding: 70px 0 53px 0;
+  margin: 0 auto; }
+
+/* line 11, ../sass/portfolio.scss */
+.mosaic hr {
+  clear: both;
+  visibility: hidden; }
+/* line 15, ../sass/portfolio.scss */
+.mosaic article {
+  margin-bottom: 17px; }
+
+/* line 18, ../sass/portfolio.scss */
+.projet hr {
+  width: 18px;
+  line-height: 1px;
+  border: 0 0 2px 0;
+  border-style: solid;
+  border-color: #191919; }
+  /* line 24, ../sass/portfolio.scss */
+  .projet hr:nth-child(2) {
+    margin-top: 3000px; }
+
+/* line 28, ../sass/portfolio.scss */
+.projet {
   text-align: center;
+  font-family: "Regular", sans-serif; }
+  /* line 31, ../sass/portfolio.scss */
+  .projet h1 {
+    margin: 70px 0 25px 0;
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #191919; }
+    /* line 36, ../sass/portfolio.scss */
+    .projet h1 + p {
+      margin-bottom: 50px;
+      font-size: 1em;
+      color: #656565; }
+
+/* line 45, ../sass/portfolio.scss */
+.projet nav li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  opacity: 0.6; }
+  /* line 49, ../sass/portfolio.scss */
+  .projet nav li:hover {
+    opacity: 1; }
+
+/* line 55, ../sass/portfolio.scss */
+.projet ul {
+  margin: 20px; }
+  /* line 57, ../sass/portfolio.scss */
+  .projet ul li {
+    font-size: 0.75em;
+    color: #656565; }
+    /* line 60, ../sass/portfolio.scss */
+    .projet ul li a {
+      color: #191919;
+      text-decoration: none; }
+      /* line 63, ../sass/portfolio.scss */
+      .projet ul li a :hover {
+        text-decoration: underline; }
+
+/* line 69, ../sass/portfolio.scss */
+.capture img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px; }
+  /* line 73, ../sass/portfolio.scss */
+  .capture img:first-child {
+    margin-top: 80px; }
+
+@font-face {
+  font-family: 'Regular';
+  src: url("../font/aller_lt-webfont.ttf"); }
+
+@font-face {
+  font-family: 'Regularita';
+  src: url("../font/aller_ltit-webfont.ttf"); }
+
+/* line 5, ../sass/footer.scss */
+footer {
+  background-image: url(../images/pattern-blue.png);
+  background-repeat: repeat;
   height: 140px;
   line-height: 140px;
   width: 100%;
   bottom: 0;
-  background-image: url(../images/pattern-blue.png);
-  background-repeat: repeat; }
-  /* line 18, ../sass/footer.scss */
-  footer ul {
-    vertical-align: middle;
-    display: inline; }
-    /* line 23, ../sass/footer.scss */
-    footer ul li {
-      font-size: 0.75em;
-      list-style: none;
-      padding: 6px; }
-      /* line 27, ../sass/footer.scss */
-      footer ul li a {
-        color: #b2b2b2;
-        text-decoration: none; }
-      /* line 28, ../sass/footer.scss */
-      footer ul li a:hover {
-        color: #7f7f7f;
-        transition-duration: 1s; }
-  /* line 36, ../sass/footer.scss */
-  footer ul:nth-child(2) li {
-    display: inline;
-    padding: 15px;
-    opacity: 0.6; }
-    /* line 41, ../sass/footer.scss */
-    footer ul:nth-child(2) li:hover {
-      opacity: 1;
-      transition-duration: 2s; }
-  /* line 49, ../sass/footer.scss */
+  font-family: "Regular", sans-serif;
+  color: #b2b2b2;
+  text-align: center; }
+  /* line 16, ../sass/footer.scss */
   footer section {
     vertical-align: middle;
     display: inline-block;
     line-height: 1.1; }
 
-/* line 58, ../sass/footer.scss */
+/* line 23, ../sass/footer.scss */
+footer ul {
+  display: inline;
+  vertical-align: middle; }
+  /* line 27, ../sass/footer.scss */
+  footer ul li {
+    font-size: 0.75em;
+    list-style: none;
+    padding: 6px; }
+    /* line 32, ../sass/footer.scss */
+    footer ul li a {
+      color: #b2b2b2; }
+    /* line 33, ../sass/footer.scss */
+    footer ul li a:hover {
+      color: #7f7f7f; }
+
+/* line 39, ../sass/footer.scss */
+footer ul:nth-child(2) li {
+  display: inline;
+  padding: 15px;
+  opacity: 0.6; }
+  /* line 44, ../sass/footer.scss */
+  footer ul:nth-child(2) li:hover {
+    opacity: 1; }
+
+/* line 48, ../sass/footer.scss */
 address {
   margin-bottom: 20px; }
 
@@ -183,85 +260,99 @@ body {
   background-image: url(../images/pattern-grey.png);
   background-repeat: repeat; }
 
+/* line 10, ../sass/screen.scss */
+a {
+  text-decoration: none; }
+
 @media all and (min-width: 1060px) {
-  /* line 12, ../sass/screen.scss */
-  header section, #mosaic, #projet, footer section, aside:nth-child(2) {
+  /* line 14, ../sass/screen.scss */
+  header section, .mosaic, .projet, footer section, aside:nth-child(2) {
     width: 1060px;
     margin: auto; }
 
-  /* line 13, ../sass/screen.scss */
-  section:nth-child(2) {
+  /* line 15, ../sass/screen.scss */
+  .intro {
     background-image: url(../images/pattern-blue.png);
     background-repeat: repeat; }
-    /* line 13, ../sass/screen.scss */
-    section:nth-child(2) aside {
+    /* line 15, ../sass/screen.scss */
+    .intro aside {
       text-align: center; }
 
-  /* line 14, ../sass/screen.scss */
-  #mosaic img {
+  /* line 16, ../sass/screen.scss */
+  .intro img {
+    max-width: 100%;
+    height: auto; }
+
+  /* line 17, ../sass/screen.scss */
+  .mosaic img {
     width: 510px;
     height: 338px; }
 
-  /* line 15, ../sass/screen.scss */
+  /* line 18, ../sass/screen.scss */
   article:nth-child(odd) {
     text-align: left;
     padding-left: 10px;
     margin-right: 20px; }
 
-  /* line 16, ../sass/screen.scss */
+  /* line 19, ../sass/screen.scss */
   article:nth-child(even) {
     text-align: right;
     padding-right: 10px; }
 
-  /* line 17, ../sass/screen.scss */
+  /* line 20, ../sass/screen.scss */
   article {
     float: left;
     display: block; } }
 @media all and (max-width: 1060px) {
-  /* line 22, ../sass/screen.scss */
-  header section, section:nth-child(3), footer section {
+  /* line 25, ../sass/screen.scss */
+  header section, .mosaic, .projet, footer section {
     max-width: 1060px;
     margin: auto; }
 
-  /* line 23, ../sass/screen.scss */
+  /* line 26, ../sass/screen.scss */
   article {
     width: 100%;
     text-align: center; }
 
-  /* line 24, ../sass/screen.scss */
-  section:nth-child(2) {
+  /* line 27, ../sass/screen.scss */
+  .intro {
     background-image: url(../images/pattern-blue.png);
     background-repeat: repeat; }
-    /* line 24, ../sass/screen.scss */
-    section:nth-child(2) aside {
+    /* line 27, ../sass/screen.scss */
+    .intro aside {
       text-align: center; }
 
-  /* line 25, ../sass/screen.scss */
-  #mosaic img {
+  /* line 28, ../sass/screen.scss */
+  .intro img {
+    max-width: 100%;
+    height: auto; }
+
+  /* line 30, ../sass/screen.scss */
+  .mosaic img {
     width: 510px;
     height: 338px; } }
 @media all and (max-width: 510px) {
-  /* line 31, ../sass/screen.scss */
-  header section, #mosaic, footer section {
+  /* line 36, ../sass/screen.scss */
+  header section, .mosaic, .projet, footer section {
     max-width: 510px;
     margin: auto; }
 
-  /* line 32, ../sass/screen.scss */
-  section:nth-child(2) {
+  /* line 37, ../sass/screen.scss */
+  .intro {
     display: none; }
 
-  /* line 33, ../sass/screen.scss */
+  /* line 38, ../sass/screen.scss */
   header ul {
     clear: both;
     float: left;
     width: 100%; }
 
-  /* line 34, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   article {
     width: 100%;
     text-align: center; }
 
-  /* line 36, ../sass/screen.scss */
-  #mosaic img {
+  /* line 41, ../sass/screen.scss */
+  .mosaic img {
     width: 300px;
     height: 198px; } }

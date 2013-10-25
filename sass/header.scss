@@ -2,42 +2,42 @@
 @import "typography";
 @import "colors";
 
-header
-{
- font-size: $small-font-size;
- font-family: $regular;
- color: $color_grey; 
- text-transform: uppercase;
- @include bg-blue;
- height:60px;
- line-height:60px;	
+header {
+    @include bg-blue;
+    height:60px;
+    line-height:60px;  
+    font-size: $small_font_size;
+    font-family: $regular;
+    color: $color_grey; 
+    text-transform: uppercase;
 
- 
- img,ul
-  {
-	vertical-align:middle;
-	display:inline-block;
-  }
-	
-  aside 
-  {
-	min-width:10%;
-	float:left;
- margin-left:10px;
-  }
+img,ul {
+    display:inline-block;
+    vertical-align:middle; 
+    }
 
-  nav 
-  {
-	max-width: 90%;	
-	float:right;
-  margin-right: 10px;
-  li 
-    {
-	display: inline;
-	margin:0 5px 0 5px;
-	&.selected a{color:$color_selected}
-    a {color:$color_grey;text-decoration: none;}
-    a:hover {color:$color_grey_hover;transition-duration:1s} 
+// Logo
+aside {   
+    float:left;
+    min-width:10%;
+    margin-left:10px; 
+    }
 }
+
+header nav {
+    float:right;
+    max-width: 90%; 
+    margin-right: 10px;  
+    
+    li {
+        display: inline;
+        margin:0 5px 0 5px;
+
+    &.selected a{ color:$color_selected }
+    a { color:$color_grey; }
+    a:hover { color:$color_grey_hover;}  
+ }
 }
-} 
+.intro { max-width:100%; height:auto;text-align: center; }
+.intro aside {margin:auto!important;text-align: center!important;}
+

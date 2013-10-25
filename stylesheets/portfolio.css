@@ -1,12 +1,80 @@
-/* line 2, ../sass/portfolio.scss */
-#mosaic {
-  padding: 70px 0 40px 0;
-  margin: 0 auto; }
-  /* line 7, ../sass/portfolio.scss */
-  #mosaic hr {
-    clear: both;
-    visibility: hidden; }
+@font-face {
+  font-family: 'Regular';
+  src: url("../font/aller_lt-webfont.ttf"); }
 
-/* line 9, ../sass/portfolio.scss */
-img {
+@font-face {
+  font-family: 'Regularita';
+  src: url("../font/aller_ltit-webfont.ttf"); }
+
+/* line 5, ../sass/portfolio.scss */
+.mosaic, .projet {
+  padding: 70px 0 53px 0;
+  margin: 0 auto; }
+
+/* line 11, ../sass/portfolio.scss */
+.mosaic hr {
+  clear: both;
+  visibility: hidden; }
+/* line 15, ../sass/portfolio.scss */
+.mosaic article {
   margin-bottom: 17px; }
+
+/* line 18, ../sass/portfolio.scss */
+.projet hr {
+  width: 18px;
+  line-height: 1px;
+  border: 0 0 2px 0;
+  border-style: solid;
+  border-color: #191919; }
+  /* line 24, ../sass/portfolio.scss */
+  .projet hr:nth-child(2) {
+    margin-top: 3000px; }
+
+/* line 28, ../sass/portfolio.scss */
+.projet {
+  text-align: center;
+  font-family: "Regular", sans-serif; }
+  /* line 31, ../sass/portfolio.scss */
+  .projet h1 {
+    margin: 70px 0 25px 0;
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #191919; }
+    /* line 36, ../sass/portfolio.scss */
+    .projet h1 + p {
+      margin-bottom: 50px;
+      font-size: 1em;
+      color: #656565; }
+
+/* line 45, ../sass/portfolio.scss */
+.projet nav li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  opacity: 0.6; }
+  /* line 49, ../sass/portfolio.scss */
+  .projet nav li:hover {
+    opacity: 1; }
+
+/* line 55, ../sass/portfolio.scss */
+.projet ul {
+  margin: 20px; }
+  /* line 57, ../sass/portfolio.scss */
+  .projet ul li {
+    font-size: 0.75em;
+    color: #656565; }
+    /* line 60, ../sass/portfolio.scss */
+    .projet ul li a {
+      color: #191919;
+      text-decoration: none; }
+      /* line 63, ../sass/portfolio.scss */
+      .projet ul li a :hover {
+        text-decoration: underline; }
+
+/* line 69, ../sass/portfolio.scss */
+.capture img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px; }
+  /* line 73, ../sass/portfolio.scss */
+  .capture img:first-child {
+    margin-top: 80px; }
