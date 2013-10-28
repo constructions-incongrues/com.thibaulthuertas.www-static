@@ -45,13 +45,15 @@ header nav {
     header nav li a:hover {
       color: #7f7f7f; }
 
-/* line 41, ../sass/header.scss */
-.intro {
-  max-width: 100%;
-  height: auto;
-  text-align: center; }
-
 /* line 42, ../sass/header.scss */
-.intro aside {
-  margin: auto !important;
-  text-align: center !important; }
+.intro {
+  background-image: url(../images/pattern-blue.png);
+  background-repeat: repeat; }
+  /* line 44, ../sass/header.scss */
+  .intro img {
+    max-width: 100%;
+    height: auto; }
+  /* line 48, ../sass/header.scss */
+  .intro aside {
+    text-align: center;
+    border: 1px solid transparent; }

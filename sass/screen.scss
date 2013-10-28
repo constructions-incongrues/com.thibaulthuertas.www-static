@@ -1,3 +1,4 @@
+
 @import "compass/reset";
 @import "typography";
 @import "header";
@@ -11,9 +12,9 @@ a { text-decoration: none }
 
 @media all and (min-width:1060px)
   {
-	header section,.mosaic,.projet, footer section,  aside:nth-child(2) {width:1060px;margin: auto;}
-  .intro { @include bg-blue; aside {  text-align:center; }}
-  .intro img {max-width:100%;height:auto;}
+	header section,.mosaic,#projets, footer section, .intro+aside {width:1060px;margin: auto;}
+
+   .intro img {max-width:100%;height:auto;}
 	.mosaic img {width:510px;height:338px;}
   article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:20px;}
   article:nth-child(even) {text-align: right;padding-right: 10px;}
@@ -22,9 +23,8 @@ a { text-decoration: none }
 
 @media all and (max-width:1060px) 
   {
-  	header section,.mosaic,.projet,footer section {max-width:1060px;margin: auto;}
+  	header section,.mosaic,#projets,footer section {max-width:1060px;margin: auto;}
     article {width: 100%;text-align: center}
-    .intro { @include bg-blue; aside {  text-align: center; }}
   .intro img {max-width:100%;height:auto;}
 
 	  .mosaic img {width:510px;height:338px;}
@@ -33,7 +33,7 @@ a { text-decoration: none }
 
 @media all and (max-width:510px) 
   {
-  	header section,.mosaic,.projet, footer section {max-width:510px;margin: auto;}
+  	header section,.mosaic,#projets, footer section {max-width:510px;margin: auto;}
     .intro {display: none;}
   	header ul {clear:both;float:left;width:100%;}
     article {width: 100%;text-align: center}

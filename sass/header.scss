@@ -38,6 +38,17 @@ header nav {
     a:hover { color:$color_grey_hover;}  
  }
 }
-.intro { max-width:100%; height:auto;text-align: center; }
-.intro aside {margin:auto!important;text-align: center!important;}
+
+.intro {
+    @include bg-blue;
+        img {
+          max-width:100%;
+          height:auto;   
+          }    
+        aside { 
+              text-align: center;
+               border : 1px solid transparent; // hack 
+            }       
+}
+
 

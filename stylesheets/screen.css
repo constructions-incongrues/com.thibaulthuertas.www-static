@@ -109,16 +109,18 @@ header nav {
     header nav li a:hover {
       color: #7f7f7f; }
 
-/* line 41, ../sass/header.scss */
-.intro {
-  max-width: 100%;
-  height: auto;
-  text-align: center; }
-
 /* line 42, ../sass/header.scss */
-.intro aside {
-  margin: auto !important;
-  text-align: center !important; }
+.intro {
+  background-image: url(../images/pattern-blue.png);
+  background-repeat: repeat; }
+  /* line 44, ../sass/header.scss */
+  .intro img {
+    max-width: 100%;
+    height: auto; }
+  /* line 48, ../sass/header.scss */
+  .intro aside {
+    text-align: center;
+    border: 1px solid transparent; }
 
 @font-face {
   font-family: 'Regular';
@@ -255,72 +257,56 @@ footer ul:nth-child(2) li {
 address {
   margin-bottom: 20px; }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 body {
   background-image: url(../images/pattern-grey.png);
   background-repeat: repeat; }
 
-/* line 10, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 a {
   text-decoration: none; }
 
 @media all and (min-width: 1060px) {
-  /* line 14, ../sass/screen.scss */
-  header section, .mosaic, .projet, footer section, aside:nth-child(2) {
+  /* line 15, ../sass/screen.scss */
+  header section, .mosaic, #projets, footer section, .intro + aside {
     width: 1060px;
     margin: auto; }
 
-  /* line 15, ../sass/screen.scss */
-  .intro {
-    background-image: url(../images/pattern-blue.png);
-    background-repeat: repeat; }
-    /* line 15, ../sass/screen.scss */
-    .intro aside {
-      text-align: center; }
-
-  /* line 16, ../sass/screen.scss */
+  /* line 17, ../sass/screen.scss */
   .intro img {
     max-width: 100%;
     height: auto; }
 
-  /* line 17, ../sass/screen.scss */
+  /* line 18, ../sass/screen.scss */
   .mosaic img {
     width: 510px;
     height: 338px; }
 
-  /* line 18, ../sass/screen.scss */
+  /* line 19, ../sass/screen.scss */
   article:nth-child(odd) {
     text-align: left;
     padding-left: 10px;
     margin-right: 20px; }
 
-  /* line 19, ../sass/screen.scss */
+  /* line 20, ../sass/screen.scss */
   article:nth-child(even) {
     text-align: right;
     padding-right: 10px; }
 
-  /* line 20, ../sass/screen.scss */
+  /* line 21, ../sass/screen.scss */
   article {
     float: left;
     display: block; } }
 @media all and (max-width: 1060px) {
-  /* line 25, ../sass/screen.scss */
-  header section, .mosaic, .projet, footer section {
+  /* line 26, ../sass/screen.scss */
+  header section, .mosaic, #projets, footer section {
     max-width: 1060px;
     margin: auto; }
 
-  /* line 26, ../sass/screen.scss */
+  /* line 27, ../sass/screen.scss */
   article {
     width: 100%;
     text-align: center; }
-
-  /* line 27, ../sass/screen.scss */
-  .intro {
-    background-image: url(../images/pattern-blue.png);
-    background-repeat: repeat; }
-    /* line 27, ../sass/screen.scss */
-    .intro aside {
-      text-align: center; }
 
   /* line 28, ../sass/screen.scss */
   .intro img {
@@ -333,7 +319,7 @@ a {
     height: 338px; } }
 @media all and (max-width: 510px) {
   /* line 36, ../sass/screen.scss */
-  header section, .mosaic, .projet, footer section {
+  header section, .mosaic, #projets, footer section {
     max-width: 510px;
     margin: auto; }
 
