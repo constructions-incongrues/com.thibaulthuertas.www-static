@@ -44,37 +44,39 @@
     .projet h1 + p {
       margin-bottom: 50px;
       font-size: 1em;
-      color: #656565; }
+      color: #656565;
+      max-width: 940px;
+      margin: 0 auto; }
 
-/* line 45, ../sass/portfolio.scss */
+/* line 47, ../sass/portfolio.scss */
 .projet nav li {
   display: inline;
   padding: 0 10px 0 10px;
   opacity: 0.6; }
-  /* line 49, ../sass/portfolio.scss */
+  /* line 51, ../sass/portfolio.scss */
   .projet nav li:hover {
     opacity: 1; }
 
-/* line 55, ../sass/portfolio.scss */
+/* line 57, ../sass/portfolio.scss */
 .projet ul {
   margin: 20px; }
-  /* line 57, ../sass/portfolio.scss */
+  /* line 59, ../sass/portfolio.scss */
   .projet ul li {
     font-size: 0.75em;
     color: #656565; }
-    /* line 60, ../sass/portfolio.scss */
+    /* line 62, ../sass/portfolio.scss */
     .projet ul li a {
       color: #191919;
       text-decoration: none; }
-      /* line 63, ../sass/portfolio.scss */
+      /* line 65, ../sass/portfolio.scss */
       .projet ul li a :hover {
         text-decoration: underline; }
 
-/* line 69, ../sass/portfolio.scss */
+/* line 71, ../sass/portfolio.scss */
 .capture img {
   max-width: 100%;
   height: auto;
-  padding: 20px; }
-  /* line 73, ../sass/portfolio.scss */
+  padding: 20px 0 20px 0; }
+  /* line 75, ../sass/portfolio.scss */
   .capture img:first-child {
     margin-top: 80px; }

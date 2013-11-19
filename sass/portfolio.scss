@@ -32,11 +32,13 @@
         margin:70px 0 25px 0;
         text-transform: capitalize;
         font-size: em(32px);
-        color: $color_black; 
+        color: $color_black;
     + p {
     	margin-bottom: 50px;
         font-size: em(16px);
-        color: $color_grey_2; 
+        color: $color_grey_2;
+        max-width:940px;
+        margin:0 auto;
   }
  }
 }
@@ -44,9 +46,9 @@
 .projet nav {
 	li {
         display: inline;
-        padding:0 10px 0 10px;	
+        padding:0 10px 0 10px;
         opacity:0.6;
-    	&:hover { opacity:1 } 
+    	&:hover { opacity:1 }
 
 }
 }
@@ -69,7 +71,7 @@
 .capture img {
     max-width:100%;
     height: auto;
-    padding:20px;
+    padding:20px 0 20px 0;
 	&:first-child { margin-top:80px; }
 }
 

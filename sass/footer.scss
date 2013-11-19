@@ -3,16 +3,15 @@
 @import "colors";
 
 footer {
-    
     @include bg-blue;
     height: 140px;
     line-height: 140px;
     width: 100%;
     bottom: 0;
     font-family: $regular;
-    color: $color_grey; 
+    color: $color_grey;
     text-align: center;
-    
+
     section {
     vertical-align:middle;
     display:inline-block;
@@ -23,26 +22,26 @@ footer {
 footer ul {
   display:inline;
   vertical-align:middle;
-    
+
     li {
         font-size: $small_font_size;
-        list-style: none;	
+        list-style: none;
         padding:6px;
-    
+
     a { color:$color_grey; }
     a:hover { color:$color_grey_hover; }
  }
-}  
+}
 
-footer ul:nth-child(2) { 
-    
+footer ul:nth-child(2) {
+
     li{
       display: inline;
       padding:15px;
       opacity: 0.6;
-    
+
     &:hover{ opacity:1; }
  }
-}      
+}
 
 address { margin-bottom: 20px; }
