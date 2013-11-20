@@ -143,38 +143,39 @@ header nav {
     float: left; }
 
 /* line 13, ../sass/contact.scss */
-#contact nav {
+#contact span {
   height: 80px;
-  text-align: right; }
-  /* line 16, ../sass/contact.scss */
-  #contact nav img {
+  text-align: right;
+  display: block; }
+  /* line 17, ../sass/contact.scss */
+  #contact span img {
     width: 22px;
     height: 22px;
     position: relative;
     top: 50%; }
-  /* line 22, ../sass/contact.scss */
-  #contact nav a {
+  /* line 23, ../sass/contact.scss */
+  #contact span a {
     opacity: 0.4; }
-    /* line 24, ../sass/contact.scss */
-    #contact nav a:hover {
+    /* line 25, ../sass/contact.scss */
+    #contact span a:hover {
       opacity: 1; }
 
-/* line 28, ../sass/contact.scss */
+/* line 29, ../sass/contact.scss */
 #contact h1, #contact h2 {
   text-transform: capitalize;
   font-size: 1.4375em;
   color: white; }
-/* line 34, ../sass/contact.scss */
+/* line 35, ../sass/contact.scss */
 #contact p {
   font-size: 0.875em;
   margin-bottom: 20px;
   max-width: 90%;
   line-height: 16px; }
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contact li {
   font-size: 0.875em; }
 
-/* line 45, ../sass/contact.scss */
+/* line 46, ../sass/contact.scss */
 #contact hr {
   width: 18px;
   line-height: 2px;
@@ -183,14 +184,14 @@ header nav {
   border-color: #e5e5e5;
   margin: 20px 0 20px 0; }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contact a {
   color: #c0f5fb; }
-  /* line 56, ../sass/contact.scss */
+  /* line 57, ../sass/contact.scss */
   #contact a:hover {
     text-decoration: underline; }
 
-/* line 59, ../sass/contact.scss */
+/* line 60, ../sass/contact.scss */
 #contact img {
   text-align: right; }
 
@@ -347,7 +348,7 @@ a {
     margin: auto; }
 
   /* line 17, ../sass/screen.scss */
-  #contact aside {
+  #contact article {
     max-width: 940px;
     margin: auto; }
 
@@ -362,18 +363,18 @@ a {
     height: 338px; }
 
   /* line 21, ../sass/screen.scss */
-  article:nth-child(odd) {
+  .mosaic article:nth-child(odd) {
     text-align: left;
     padding-left: 10px;
     margin-right: 20px; }
 
   /* line 22, ../sass/screen.scss */
-  article:nth-child(even) {
+  .mosaic article:nth-child(even) {
     text-align: right;
     padding-right: 10px; }
 
   /* line 23, ../sass/screen.scss */
-  article {
+  .mosaic article {
     float: left;
     display: block; } }
 @media all and (max-width: 1060px) {
@@ -383,41 +384,45 @@ a {
     margin: auto; }
 
   /* line 29, ../sass/screen.scss */
-  article {
+  .mosaic article {
     width: 100%;
     text-align: center; }
 
   /* line 30, ../sass/screen.scss */
+  #contact div {
+    width: 100%; }
+
+  /* line 31, ../sass/screen.scss */
   .intro img {
     max-width: 100%;
     height: auto; }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 33, ../sass/screen.scss */
   .mosaic img {
     width: 510px;
     height: 338px; } }
 @media all and (max-width: 510px) {
-  /* line 38, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   header section, .mosaic, #projets, footer section {
     max-width: 510px;
     margin: auto; }
 
-  /* line 39, ../sass/screen.scss */
-  .intro {
+  /* line 40, ../sass/screen.scss */
+  .intro, #contact {
     display: none; }
 
-  /* line 40, ../sass/screen.scss */
+  /* line 41, ../sass/screen.scss */
   header ul {
     clear: both;
     float: left;
     width: 100%; }
 
-  /* line 41, ../sass/screen.scss */
-  article {
+  /* line 43, ../sass/screen.scss */
+  .mosaic article {
     width: 100%;
     text-align: center; }
 
-  /* line 43, ../sass/screen.scss */
+  /* line 44, ../sass/screen.scss */
   .mosaic img {
     width: 300px;
     height: 198px; } }

@@ -14,19 +14,20 @@ a { text-decoration: none }
 @media all and (min-width:1060px)
   {
 	header section,.mosaic,#projets, footer section, .intro+aside{width:1060px;margin: auto;}
-  #contact aside { max-width: 940px; margin: auto;}
+  #contact article { max-width: 940px; margin: auto;}
 
    .intro img {max-width:100%;height:auto;}
 	.mosaic img {width:510px;height:338px;}
-  article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:20px;}
-  article:nth-child(even) {text-align: right;padding-right: 10px;}
-  article {float:left;display: block;}
+  .mosaic article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:20px;}
+  .mosaic article:nth-child(even) {text-align: right;padding-right: 10px;}
+  .mosaic article {float:left;display: block;}
   }
 
 @media all and (max-width:1060px)
   {
   	header section,.mosaic,#projets,footer section {max-width:1060px;margin: auto;}
-    article {width: 100%;text-align: center}
+    .mosaic article { width: 100%; text-align: center; }
+    #contact div { width: 100%; }
   .intro img {max-width:100%;height:auto;}
 
 	  .mosaic img {width:510px;height:338px;}
@@ -36,10 +37,10 @@ a { text-decoration: none }
 @media all and (max-width:510px)
   {
   	header section,.mosaic,#projets, footer section {max-width:510px;margin: auto;}
-    .intro {display: none;}
+    .intro, #contact {display: none;}
   	header ul {clear:both;float:left;width:100%;}
-    article {width: 100%;text-align: center}
 
+    .mosaic article {width: 100%;text-align: center}
   	.mosaic img {width:300px;height:198px;}
   }
 

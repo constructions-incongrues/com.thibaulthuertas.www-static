@@ -19,38 +19,39 @@
     float: left; }
 
 /* line 13, ../sass/contact.scss */
-#contact nav {
+#contact span {
   height: 80px;
-  text-align: right; }
-  /* line 16, ../sass/contact.scss */
-  #contact nav img {
+  text-align: right;
+  display: block; }
+  /* line 17, ../sass/contact.scss */
+  #contact span img {
     width: 22px;
     height: 22px;
     position: relative;
     top: 50%; }
-  /* line 22, ../sass/contact.scss */
-  #contact nav a {
+  /* line 23, ../sass/contact.scss */
+  #contact span a {
     opacity: 0.4; }
-    /* line 24, ../sass/contact.scss */
-    #contact nav a:hover {
+    /* line 25, ../sass/contact.scss */
+    #contact span a:hover {
       opacity: 1; }
 
-/* line 28, ../sass/contact.scss */
+/* line 29, ../sass/contact.scss */
 #contact h1, #contact h2 {
   text-transform: capitalize;
   font-size: 1.4375em;
   color: white; }
-/* line 34, ../sass/contact.scss */
+/* line 35, ../sass/contact.scss */
 #contact p {
   font-size: 0.875em;
   margin-bottom: 20px;
   max-width: 90%;
   line-height: 16px; }
-/* line 40, ../sass/contact.scss */
+/* line 41, ../sass/contact.scss */
 #contact li {
   font-size: 0.875em; }
 
-/* line 45, ../sass/contact.scss */
+/* line 46, ../sass/contact.scss */
 #contact hr {
   width: 18px;
   line-height: 2px;
@@ -59,13 +60,13 @@
   border-color: #e5e5e5;
   margin: 20px 0 20px 0; }
 
-/* line 54, ../sass/contact.scss */
+/* line 55, ../sass/contact.scss */
 #contact a {
   color: #c0f5fb; }
-  /* line 56, ../sass/contact.scss */
+  /* line 57, ../sass/contact.scss */
   #contact a:hover {
     text-decoration: underline; }
 
-/* line 59, ../sass/contact.scss */
+/* line 60, ../sass/contact.scss */
 #contact img {
   text-align: right; }
