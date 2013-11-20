@@ -134,7 +134,6 @@ header nav {
 #contact {
   background-image: url(../images/pattern-black.png);
   background-repeat: repeat;
-  min-height: 500px;
   font-family: "Regular", sans-serif;
   color: #e5e5e5; }
   /* line 10, ../sass/contact.scss */
@@ -352,77 +351,89 @@ a {
     max-width: 940px;
     margin: auto; }
 
+  /* line 18, ../sass/screen.scss */
+  #contact address {
+    display: none; }
+
   /* line 19, ../sass/screen.scss */
   .intro img {
     max-width: 100%;
     height: auto; }
 
-  /* line 20, ../sass/screen.scss */
+  /* line 21, ../sass/screen.scss */
   .mosaic img {
     width: 510px;
     height: 338px; }
 
-  /* line 21, ../sass/screen.scss */
+  /* line 22, ../sass/screen.scss */
   .mosaic article:nth-child(odd) {
     text-align: left;
     padding-left: 10px;
     margin-right: 20px; }
 
-  /* line 22, ../sass/screen.scss */
+  /* line 23, ../sass/screen.scss */
   .mosaic article:nth-child(even) {
     text-align: right;
     padding-right: 10px; }
 
-  /* line 23, ../sass/screen.scss */
+  /* line 24, ../sass/screen.scss */
   .mosaic article {
     float: left;
     display: block; } }
 @media all and (max-width: 1060px) {
-  /* line 28, ../sass/screen.scss */
+  /* line 29, ../sass/screen.scss */
   header section, .mosaic, #projets, footer section {
     max-width: 1060px;
     margin: auto; }
 
-  /* line 29, ../sass/screen.scss */
+  /* line 30, ../sass/screen.scss */
   .mosaic article {
     width: 100%;
     text-align: center; }
 
-  /* line 30, ../sass/screen.scss */
-  #contact div {
-    width: 100%; }
-
   /* line 31, ../sass/screen.scss */
+  #contact address {
+    display: none; }
+
+  /* line 33, ../sass/screen.scss */
   .intro img {
     max-width: 100%;
     height: auto; }
 
-  /* line 33, ../sass/screen.scss */
+  /* line 35, ../sass/screen.scss */
   .mosaic img {
     width: 510px;
     height: 338px; } }
 @media all and (max-width: 510px) {
-  /* line 39, ../sass/screen.scss */
+  /* line 41, ../sass/screen.scss */
   header section, .mosaic, #projets, footer section {
     max-width: 510px;
     margin: auto; }
 
-  /* line 40, ../sass/screen.scss */
-  .intro, #contact {
+  /* line 42, ../sass/screen.scss */
+  .intro {
     display: none; }
 
-  /* line 41, ../sass/screen.scss */
+  /* line 43, ../sass/screen.scss */
+  #contact div {
+    display: none; }
+
+  /* line 44, ../sass/screen.scss */
+  #contact address {
+    display: inline; }
+
+  /* line 45, ../sass/screen.scss */
   header ul {
     clear: both;
     float: left;
     width: 100%; }
 
-  /* line 43, ../sass/screen.scss */
+  /* line 46, ../sass/screen.scss */
   .mosaic article {
     width: 100%;
     text-align: center; }
 
-  /* line 44, ../sass/screen.scss */
+  /* line 47, ../sass/screen.scss */
   .mosaic img {
     width: 300px;
     height: 198px; } }

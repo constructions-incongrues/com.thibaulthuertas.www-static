@@ -10,7 +10,6 @@
 #contact {
   background-image: url(../images/pattern-black.png);
   background-repeat: repeat;
-  min-height: 500px;
   font-family: "Regular", sans-serif;
   color: #e5e5e5; }
   /* line 10, ../sass/contact.scss */

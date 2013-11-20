@@ -15,8 +15,9 @@ a { text-decoration: none }
   {
 	header section,.mosaic,#projets, footer section, .intro+aside{width:1060px;margin: auto;}
   #contact article { max-width: 940px; margin: auto;}
+  #contact address { display: none; }
+  .intro img { max-width:100%;height:auto; }
 
-   .intro img {max-width:100%;height:auto;}
 	.mosaic img {width:510px;height:338px;}
   .mosaic article:nth-child(odd) {text-align: left;padding-left: 10px;margin-right:20px;}
   .mosaic article:nth-child(even) {text-align: right;padding-right: 10px;}
@@ -27,7 +28,8 @@ a { text-decoration: none }
   {
   	header section,.mosaic,#projets,footer section {max-width:1060px;margin: auto;}
     .mosaic article { width: 100%; text-align: center; }
-    #contact div { width: 100%; }
+    #contact address { display: none; }
+
   .intro img {max-width:100%;height:auto;}
 
 	  .mosaic img {width:510px;height:338px;}
@@ -37,9 +39,10 @@ a { text-decoration: none }
 @media all and (max-width:510px)
   {
   	header section,.mosaic,#projets, footer section {max-width:510px;margin: auto;}
-    .intro, #contact {display: none;}
+    .intro {display: none;}
+    #contact div {display: none;}
+    #contact address {display: inline;}
   	header ul {clear:both;float:left;width:100%;}
-
     .mosaic article {width: 100%;text-align: center}
   	.mosaic img {width:300px;height:198px;}
   }
