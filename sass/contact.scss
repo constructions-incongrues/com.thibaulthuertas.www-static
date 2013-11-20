@@ -1,0 +1,61 @@
+@import "mixin";
+@import "typography";
+@import "colors";
+
+#contact {
+    @include bg-black;
+    min-height: 500px; // temp hack
+    font-family: $regular;
+    color:$color_grey_3;
+    div { width: 50%;float:left; }
+}
+
+#contact nav {
+    height: 80px;
+    text-align: right;
+    img {
+        width:22px;
+        height:22px;
+        position:relative;
+        top:50%;
+}
+    a {
+        opacity: 0.4;
+    &:hover { opacity: 1; }
+    }
+}
+#contact {
+    h1, h2 {
+        text-transform: capitalize;
+        font-size: em(23px);
+        color: $color_white;
+    }
+
+    p {
+      font-size: em(14px);
+      margin-bottom: 20px;
+      max-width: 90%;
+      line-height: 16px;
+      }
+    li { font-size: em(14px); }
+}
+
+
+
+#contact hr {
+    width: 18px;
+    line-height: 2px;
+    border:0 0 2px 0;
+    border-style:solid;
+    border-color:$color_grey_3;
+    margin: 20px 0 20px 0;
+}
+
+#contact a {
+    color:$color_blue;
+    &:hover {text-decoration: underline;}
+}
+
+#contact img {
+    text-align:right;
+}

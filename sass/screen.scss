@@ -2,6 +2,7 @@
 @import "compass/reset";
 @import "typography";
 @import "header";
+@import "contact";
 @import "portfolio";
 @import "footer";
 @import "colors";
@@ -12,7 +13,8 @@ a { text-decoration: none }
 
 @media all and (min-width:1060px)
   {
-	header section,.mosaic,#projets, footer section, .intro+aside {width:1060px;margin: auto;}
+	header section,.mosaic,#projets, footer section, .intro+aside{width:1060px;margin: auto;}
+  #contact aside { max-width: 940px; margin: auto;}
 
    .intro img {max-width:100%;height:auto;}
 	.mosaic img {width:510px;height:338px;}
@@ -21,7 +23,7 @@ a { text-decoration: none }
   article {float:left;display: block;}
   }
 
-@media all and (max-width:1060px) 
+@media all and (max-width:1060px)
   {
   	header section,.mosaic,#projets,footer section {max-width:1060px;margin: auto;}
     article {width: 100%;text-align: center}
@@ -31,7 +33,7 @@ a { text-decoration: none }
 
   }
 
-@media all and (max-width:510px) 
+@media all and (max-width:510px)
   {
   	header section,.mosaic,#projets, footer section {max-width:510px;margin: auto;}
     .intro {display: none;}
