@@ -12,21 +12,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="stylesheets/screen.css">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+  $("#contact").hide();
+  $(".show_hide").show();
+
+   $('.show_hide').click(function(){
+   $("#contact").slideToggle();
+    });
+
+});
+
+</script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+$("#contact").outerHeight();
+
+$("#contact").height();
+
+});
+
+</script>
 </head>
 <body>
+
+    <section id="contact">
+      <article>
+            <span role="application"><a href=""><img src="images/contact-close.png" alt="Close"></a></span>
+
+        <div>
+          <h1>Une petite présentation</h1>
+
+          <hr />
+          <p>Je m'appelle Thibault Huertas et je suis designer graphique freelance à Paris.</p>
+
+          <p>Web designer, puis directeur artistique chez <a href="http://www.kernix.com/" target="_blank">Kernix</a>, une agence spécialisée dans le développement d'application web et mobile, j'ai pu concevoir divers projets interactifs avec une clientèle variée.
+          </p>
+          <p>
+            Autonome et perfectionniste, mon plaisir sera de concevoir un design de qualité qui répondra à vos besoins. J'attache une grande importance à créer des interfaces innovantes et originales.
+          </p>
+
+          <p>Direction artistique / design graphique / web design / icones / illustrations / identités visuelles / logos</p>
+
+          <h2>Récompenses</h2>
+
+          <hr />
+
+          <ul>
+            <li>Lauréat du concours <a href="http://www.csswinner.com/details/-da-heard-it-records/3154/" target="_blank">CSS Winner</a> pour le site <a href="/project/da-heard-it-records#project">Da ! Heard It Records</a>
+            </ul>
+          </div>
+
+          <div>
+            <h1>Restons en contact</h1>
+
+            <hr />
+
+
+            <p>
+              N'hésitez pas à me contacter si vous avez une question, ou pour faire connaissance.
+              Je suis actuellement disponible en freelance.
+            </p>
+
+            <hr />
+
+            <ul>
+              <li><a href="mailto:contact@thibaulthuertas.com">contact@thibaulthuertas.com</a>
+                <li>+ 33.6.10.68.41.33</li>
+              </ul>
+
+              <hr />
+
+              <ul>
+                <li><a href="http://www.behance.net/thibaulthuertas" target="_blank">Behance</a></li>
+                <li><a href="http://www.flickr.com/photos/14850436@N05/" target="_blank">Flickr</a></li>
+                <li><a href="http://www.linkedin.com/pub/thibault-huertas/16/a14/b6a" target="_blank">Linkedin</a></li>
+              </ul>
+            </div>
+          <address>
+              <ul>
+          <li><a href="mailto:contact@thibaulthuertas.com">contact@thibaulthuertas.com</a></li>
+          <li>+ 33.6.10.68.41.33</li>
+        </ul>
+          </address>
+          </article>
+        </section>
+
 
 <header role="banner">
   <section>
 
     <aside>
-      <img src="images/logo.png" alt="">
+      <img src="images/logo.png" alt="TH">
     </aside>
 
     <nav role="navigation">
       <ul>
-        <li class="selected"><a href="" title="">Acceuil</a></li>
-        <li><a href="" title="">Projet</a></li>
-        <li><a href="" title="">Contact</a></li>
+        <li class="selected"><a href="">Acceuil</a></li>
+        <li><a href="projets.html">Projet</a></li>
+        <li><a href="#contact" class="show_hide" title="">Contact</a></li>
       </ul>
     </nav>
   </section>

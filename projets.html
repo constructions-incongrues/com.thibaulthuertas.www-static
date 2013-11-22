@@ -15,30 +15,30 @@
 </head>
 <body>
 
- <header>
-   <section>
-     
-     <aside>
-      <img src="images/logo.png" alt="">
-     </aside>
 
-    <nav>
+<header role="banner">
+  <section>
+
+    <aside>
+      <img src="images/logo.png" alt="TH">
+    </aside>
+
+    <nav role="navigation">
       <ul>
-        <li class="selected"><a href="" title="">Acceuil</a></li>
-        <li><a href="" title="">Projet</a></li>
-        <li><a href="" title="">Contact</a></li>
-    </ul>
+        <li class="selected"><a href="index.html">Acceuil</a></li>
+        <li><a href="projets.html">Projet</a></li>
+        <li><a href="#contact" class="show_hide" title="">Contact</a></li>
+      </ul>
     </nav>
- 
   </section>
-</header><!-- /header -->
+</header>
 
 <section class="intro">
-   <aside>
-       <a class="smooth" href="#projects" title="Consulter la liste des projets">
-          <img src="images/1.png" />
-       </a>
-    </aside> 
+  <aside role="complementary">
+    <a class="smooth" href="#projects" title="Consulter la liste des projets">
+     <img src="images/1.png" />
+    </a>
+   </aside>
 </section>
 
 <section class="projet">
@@ -52,7 +52,7 @@
 
   <h1>Book Weather</h1>
   <p>
-    Book Weather est une application qui permet de partager ses lectures avec sa communauté, de suivre l'activité littéraire de ses amis et de découvrir quels sont les livres ayant la plus forte actualité. 
+    Book Weather est une application qui permet de partager ses lectures avec sa communauté, de suivre l'activité littéraire de ses amis et de découvrir quels sont les livres ayant la plus forte actualité.
   </p>
   <hr />
     <ul>
@@ -62,13 +62,13 @@
     </ul>
   <hr />
   <section class="capture">
-   
+
    <img src="images/projets1.png" alt="" />
    <img src="images/projets2.png" alt="" />
    <img src="images/projets3.png" alt="" />
    <img src="images/projets4.png" alt="" />
    <img src="images/projets5.png" alt="" />
- 
+
   </section>
   <nav>
   <ul>
@@ -81,8 +81,8 @@
 
 </section>
 
-<footer>
-  <section> 
+<footer role="contentinfo">
+  <section>
     <ul>
       <li><a href="mailto:contact@thibaulthuertas.com">contact@thibaulthuertas.com</a></li>
       <li>+ 33.6.10.68.41.33</li>
@@ -104,10 +104,10 @@
           <img src="images/behance.png" alt="Behance" />
         </a>
       </li>
-
     </ul>
   </section>
 </footer>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 

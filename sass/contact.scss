@@ -4,9 +4,10 @@
 
 #contact {
     @include bg-black;
-    // min-height: 500px; // temp hack
+    vertical-align: middle;
     font-family: $regular;
     color:$color_grey_3;
+    height: 500px;
     div { width: 50%;float:left; }
 }
 
@@ -60,3 +61,4 @@
 #contact img {
     text-align:right;
 }
+
