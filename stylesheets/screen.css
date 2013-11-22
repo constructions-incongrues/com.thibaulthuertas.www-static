@@ -422,31 +422,46 @@ a {
 
   /* line 44, ../sass/screen.scss */
   #contact address {
-    display: inline;
-    position: relative;
-    top: -24px; }
+    display: inline-block; }
 
   /* line 45, ../sass/screen.scss */
   #contact {
-    height: 60px;
-    padding: 10px; }
+    height: 60px; }
 
   /* line 46, ../sass/screen.scss */
-  #contact span {
-    height: 40px; }
+  #contact span, #contact address {
+    height: 100%;
+    *display: inline;
+    zoom: 1;
+    /* inline-block pour IE6 */
+    vertical-align: middle;
+    line-height: 60px; }
 
-  /* line 47, ../sass/screen.scss */
+  /* line 52, ../sass/screen.scss */
+  #contact address {
+    width: 80%;
+    float: left;
+    padding: 0 0 0 10px; }
+
+  /* line 53, ../sass/screen.scss */
+  #contact span {
+    width: 10%;
+    float: left;
+    position: relative;
+    top: 5px; }
+
+  /* line 54, ../sass/screen.scss */
   header ul {
     clear: both;
     float: left;
     width: 100%; }
 
-  /* line 48, ../sass/screen.scss */
+  /* line 55, ../sass/screen.scss */
   .mosaic article {
     width: 100%;
     text-align: center; }
 
-  /* line 49, ../sass/screen.scss */
+  /* line 56, ../sass/screen.scss */
   .mosaic img {
     width: 300px;
     height: 198px; } }
