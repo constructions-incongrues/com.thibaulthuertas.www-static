@@ -32,22 +32,22 @@ footer ul {
     font-size: 0.75em;
     list-style: none;
     padding: 6px; }
-    /* line 31, ../sass/footer.scss */
-    footer ul li a {
-      color: #b2b2b2; }
-    /* line 32, ../sass/footer.scss */
-    footer ul li a:hover {
-      color: #7f7f7f; }
+  /* line 31, ../sass/footer.scss */
+  footer ul a {
+    color: #b2b2b2; }
+  /* line 32, ../sass/footer.scss */
+  footer ul a:hover {
+    color: #7f7f7f; }
 
-/* line 38, ../sass/footer.scss */
+/* line 37, ../sass/footer.scss */
 footer ul:nth-child(2) li {
   display: inline;
   padding: 15px;
   opacity: 0.6; }
-  /* line 43, ../sass/footer.scss */
+  /* line 42, ../sass/footer.scss */
   footer ul:nth-child(2) li:hover {
     opacity: 1; }
 
-/* line 47, ../sass/footer.scss */
+/* line 46, ../sass/footer.scss */
 address {
   margin-bottom: 20px; }

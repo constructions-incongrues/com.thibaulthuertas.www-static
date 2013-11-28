@@ -2,21 +2,11 @@
 @import "typography";
 @import "colors";
 
-
 #contact {
     @include bg-black;
-    vertical-align: middle;
     font-family: $regular;
     color:$color_grey_3;
-
 }
-
-.equal { display:table; }
-.row { display:table-row; }
-.row article {
-    display:table-cell;
-    padding:0 0 80px 0;
-    }
 
 #contact span {
     height: 80px;
@@ -27,19 +17,26 @@
         height:22px;
         position:relative;
         top:50%;
+        }
+    a { opacity: 0.4;
+    &:hover { opacity: 1;
+    } }
 }
-    a {
-        opacity: 0.4;
-    &:hover { opacity: 1; }
-    }
-}
+
 #contact {
     h1, h2 {
         text-transform: capitalize;
         font-size: em(23px);
         color: $color_white;
+        }
+    hr {
+        width: 18px;
+        line-height: 2px;
+        border:0 0 2px 0;
+        border-style:solid;
+        border-color:$color_grey_3;
+        margin: 20px 0 20px 0;
     }
-
     p {
       font-size: em(14px);
       margin-bottom: 20px;
@@ -49,23 +46,14 @@
     li { font-size: em(14px); }
 }
 
-
-
-#contact hr {
-    width: 18px;
-    line-height: 2px;
-    border:0 0 2px 0;
-    border-style:solid;
-    border-color:$color_grey_3;
-    margin: 20px 0 20px 0;
-}
-
 #contact a {
     color:$color_blue;
     &:hover {text-decoration: underline;}
 }
 
-#contact img {
-    text-align:right;
-}
-
+.equal { display:table; }
+.row { display:table-row; }
+.row article {
+    display:table-cell;
+    padding:0 0 80px 0;
+    }

@@ -27,15 +27,14 @@ footer ul {
         font-size: $small_font_size;
         list-style: none;
         padding:6px;
-
+    }
     a { color:$color_grey; }
     a:hover { color:$color_grey_hover; }
- }
 }
 
 footer ul:nth-child(2) {
 
-    li{
+    li {
       display: inline;
       padding:15px;
       opacity: 0.6;
