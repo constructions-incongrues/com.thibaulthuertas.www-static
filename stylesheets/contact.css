@@ -10,66 +10,70 @@
 #contact {
   background-image: url(../images/pattern-black.png);
   background-repeat: repeat;
+  color: #e5e5e5;
   font-family: "Regular", sans-serif;
-  color: #e5e5e5; }
+  padding: 0 10px; }
 
-/* line 11, ../sass/contact.scss */
+/* line 12, ../sass/contact.scss */
 #contact span {
+  display: block;
   height: 80px;
-  text-align: right;
-  display: block; }
-  /* line 15, ../sass/contact.scss */
+  text-align: right; }
+  /* line 16, ../sass/contact.scss */
   #contact span img {
-    width: 22px;
     height: 22px;
     position: relative;
-    top: 50%; }
-  /* line 21, ../sass/contact.scss */
+    top: 50%;
+    width: 22px; }
+  /* line 22, ../sass/contact.scss */
   #contact span a {
-    opacity: 0.4; }
-    /* line 22, ../sass/contact.scss */
+    opacity: .4; }
+    /* line 23, ../sass/contact.scss */
     #contact span a:hover {
       opacity: 1; }
 
-/* line 27, ../sass/contact.scss */
-#contact h1, #contact h2 {
-  text-transform: capitalize;
+/* line 29, ../sass/contact.scss */
+#contact h1,
+#contact h2 {
+  color: white;
   font-size: 1.4375em;
-  color: white; }
-/* line 32, ../sass/contact.scss */
+  padding: 20px 0 0;
+  text-transform: capitalize; }
+/* line 35, ../sass/contact.scss */
 #contact hr {
-  width: 18px;
-  line-height: 2px;
   border: 0 0 2px 0;
-  border-style: solid;
   border-color: #e5e5e5;
-  margin: 20px 0 20px 0; }
-/* line 40, ../sass/contact.scss */
+  border-style: solid;
+  line-height: 2px;
+  margin: 20px 0;
+  width: 18px; }
+/* line 43, ../sass/contact.scss */
 #contact p {
-  font-size: 0.875em;
+  font-size: 0.75em;
+  line-height: 16px;
   margin-bottom: 20px;
-  max-width: 90%;
-  line-height: 16px; }
-/* line 46, ../sass/contact.scss */
-#contact li {
-  font-size: 0.875em; }
-
+  max-width: 90%; }
 /* line 49, ../sass/contact.scss */
+#contact li {
+  font-size: 0.75em;
+  line-height: 16px; }
+
+/* line 55, ../sass/contact.scss */
 #contact a {
   color: #c0f5fb; }
-  /* line 51, ../sass/contact.scss */
+  /* line 57, ../sass/contact.scss */
   #contact a:hover {
     text-decoration: underline; }
 
-/* line 54, ../sass/contact.scss */
+/* line 60, ../sass/contact.scss */
 .equal {
   display: table; }
 
-/* line 55, ../sass/contact.scss */
+/* line 61, ../sass/contact.scss */
 .row {
   display: table-row; }
 
-/* line 56, ../sass/contact.scss */
+/* line 62, ../sass/contact.scss */
 .row article {
   display: table-cell;
-  padding: 0 0 80px 0; }
+  padding: 0 0 80px; }

@@ -3,57 +3,63 @@
 @import "colors";
 
 #contact {
-    @include bg-black;
-    font-family: $regular;
-    color:$color_grey_3;
+  @include bg-black;
+  color: $color-grey-3;
+  font-family: $regular;
+  padding: 0 10px;
 }
 
 #contact span {
-    height: 80px;
-    text-align: right;
-    display: block;
-    img {
-        width:22px;
-        height:22px;
-        position:relative;
-        top:50%;
-        }
-    a { opacity: 0.4;
+  display: block;
+  height: 80px;
+  text-align: right;
+  img {
+    height: 22px;
+    position: relative;
+    top: 50%;
+    width: 22px;
+}
+  a { opacity: .4;
     &:hover { opacity: 1;
-    } }
+  } }
 }
 
 #contact {
-    h1, h2 {
-        text-transform: capitalize;
-        font-size: em(23px);
-        color: $color_white;
-        }
-    hr {
-        width: 18px;
-        line-height: 2px;
-        border:0 0 2px 0;
-        border-style:solid;
-        border-color:$color_grey_3;
-        margin: 20px 0 20px 0;
-    }
-    p {
-      font-size: em(14px);
-      margin-bottom: 20px;
-      max-width: 90%;
-      line-height: 16px;
-      }
-    li { font-size: em(14px); }
+  h1,
+  h2 {
+    color: $color-white;
+    font-size: em(23px);
+    padding: 20px 0 0;
+    text-transform: capitalize;
+  }
+  hr {
+    border: 0 0 2px 0;
+    border-color: $color-grey-3;
+    border-style: solid;
+    line-height: 2px;
+    margin: 20px 0;
+    width: 18px;
+  }
+  p {
+    font-size: em(12px);
+    line-height: 16px;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+  li {
+    font-size: em(12px);
+    line-height: 16px;
+ }
 }
 
 #contact a {
-    color:$color_blue;
-    &:hover {text-decoration: underline;}
+  color: $color-blue;
+  &:hover {text-decoration: underline;}
 }
 
-.equal { display:table; }
-.row { display:table-row; }
+.equal { display: table; }
+.row { display: table-row; }
 .row article {
-    display:table-cell;
-    padding:0 0 80px 0;
-    }
+  display: table-cell;
+  padding: 0 0 80px;
+}
