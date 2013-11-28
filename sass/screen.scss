@@ -14,7 +14,7 @@ a { text-decoration: none }
 @media all and (min-width:1060px)
   {
 	header section,.mosaic,#projets, footer section, .intro+aside {width:1060px;margin: auto;}
-  .equal { width: 940px; margin: auto;}
+  .equal, #contact span{ width: 940px; margin: auto;}
   #contact address { display: none; }
   .intro img { max-width:100%;height:auto; }
 
