@@ -130,53 +130,61 @@ header nav {
   font-family: 'Regularita';
   src: url("../font/aller_ltit-webfont.ttf"); }
 
-/* line 5, ../sass/contact.scss */
+/* line 6, ../sass/contact.scss */
 #contact {
   background-image: url(../images/pattern-black.png);
   background-repeat: repeat;
   vertical-align: middle;
   font-family: "Regular", sans-serif;
-  color: #e5e5e5;
-  height: 500px; }
-  /* line 11, ../sass/contact.scss */
-  #contact div {
-    width: 50%;
-    float: left; }
+  color: #e5e5e5; }
 
 /* line 14, ../sass/contact.scss */
+.equal {
+  display: table; }
+
+/* line 15, ../sass/contact.scss */
+.row {
+  display: table-row; }
+
+/* line 16, ../sass/contact.scss */
+.row article {
+  display: table-cell;
+  padding: 0 0 80px 0; }
+
+/* line 21, ../sass/contact.scss */
 #contact span {
   height: 80px;
   text-align: right;
   display: block; }
-  /* line 18, ../sass/contact.scss */
+  /* line 25, ../sass/contact.scss */
   #contact span img {
     width: 22px;
     height: 22px;
     position: relative;
     top: 50%; }
-  /* line 24, ../sass/contact.scss */
+  /* line 31, ../sass/contact.scss */
   #contact span a {
     opacity: 0.4; }
-    /* line 26, ../sass/contact.scss */
+    /* line 33, ../sass/contact.scss */
     #contact span a:hover {
       opacity: 1; }
 
-/* line 30, ../sass/contact.scss */
+/* line 37, ../sass/contact.scss */
 #contact h1, #contact h2 {
   text-transform: capitalize;
   font-size: 1.4375em;
   color: white; }
-/* line 36, ../sass/contact.scss */
+/* line 43, ../sass/contact.scss */
 #contact p {
   font-size: 0.875em;
   margin-bottom: 20px;
   max-width: 90%;
   line-height: 16px; }
-/* line 42, ../sass/contact.scss */
+/* line 49, ../sass/contact.scss */
 #contact li {
   font-size: 0.875em; }
 
-/* line 47, ../sass/contact.scss */
+/* line 54, ../sass/contact.scss */
 #contact hr {
   width: 18px;
   line-height: 2px;
@@ -185,14 +193,14 @@ header nav {
   border-color: #e5e5e5;
   margin: 20px 0 20px 0; }
 
-/* line 56, ../sass/contact.scss */
+/* line 63, ../sass/contact.scss */
 #contact a {
   color: #c0f5fb; }
-  /* line 58, ../sass/contact.scss */
+  /* line 65, ../sass/contact.scss */
   #contact a:hover {
     text-decoration: underline; }
 
-/* line 61, ../sass/contact.scss */
+/* line 68, ../sass/contact.scss */
 #contact img {
   text-align: right; }
 
@@ -349,8 +357,8 @@ a {
     margin: auto; }
 
   /* line 17, ../sass/screen.scss */
-  #contact article {
-    max-width: 940px;
+  .equal {
+    width: 940px;
     margin: auto; }
 
   /* line 18, ../sass/screen.scss */

@@ -2,14 +2,21 @@
 @import "typography";
 @import "colors";
 
+
 #contact {
     @include bg-black;
     vertical-align: middle;
     font-family: $regular;
     color:$color_grey_3;
-    height: 500px;
-    div { width: 50%;float:left; }
+
 }
+
+.equal { display:table; }
+.row { display:table-row; }
+.row article {
+    display:table-cell;
+    padding:0 0 80px 0;
+    }
 
 #contact span {
     height: 80px;
